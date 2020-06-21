@@ -18,3 +18,25 @@
     - Executa o servidor em modo watch e também já faz a transpilação do código TypeScript
 - yarn add tsconfig-paths -D
     - Precisa ter esse pacote para que o ts entenda como se trabalhar com os paths que criamos
+- yarn add eslint -D
+    - Pacote utilizado para podermos padronizar nosso código
+    - yarn eslint --init para poder fazer o bootstrap do eslint
+        - selecionar a terceira opção
+        - selecionar JavaScript modules (import/export)
+        - seleciona None of these
+        - selecionar sim, projeto está utilizando TypeScript
+        - selecionar node, aperte espaço para tirar a seleção do Browser
+        - selecione **Use a popular style guide**
+        - selecionar o padrão Airbnb
+        - selecionar **JSON**
+        - selecionar **NO** pois estou utilizando o yarn e não o npm, após fazer isso copio as dependência que ele mostrou e instalo com o yarn
+        - yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-standard@latest eslint@>=6.2.2 eslint-plugin-import@>=2.18.0 eslint-plugin-node@>=9.1.0 eslint-plugin-promise@>=4.2.1 eslint-plugin-standard@>=4.0.0 @typescript-eslint/parser@latest
+- yarn add jest -D
+    - Pacote para se trabalhar com testes
+- yarn jest --init
+    - Faz a configuração inicial do Jest
+- yarn add ts-jest -D
+    - Habilita para que o jest consiga trabalhar com aquivos TypeScript
+    - Ir no arquivo jest.config.js e trocar a linha do ***preset: undefined para preset: 'ts-jest'***
+- yarn add @types/jest -D
+    - Adiciona as definições de tipo do Jest
