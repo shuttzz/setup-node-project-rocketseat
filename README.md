@@ -14,6 +14,7 @@
     - Transpila o código em TypeScript para javascript puro
 - yarn add ts-node-dev -D
     - Dependência que faz a parte da transpilção automática do código TypeScript e também já deixa o servidor de desenvolvimento em modo watch
-- yar ts-node-dev {caminho-do-arquivo-server.ts}
+- yarn ts-node-dev {caminho-do-arquivo-server.ts}
     - Executa o servidor em modo watch e também já faz a transpilação do código TypeScript
-
+- yarn add tsconfig-paths -D
+    - Precisa ter esse pacote para que o ts entenda como se trabalhar com os paths que criamos
