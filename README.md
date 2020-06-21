@@ -40,3 +40,5 @@
     - Ir no arquivo jest.config.js e trocar a linha do ***preset: undefined para preset: 'ts-jest'***
 - yarn add @types/jest -D
     - Adiciona as definições de tipo do Jest
+- yarn add -D @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver
+    - Instalação do babel que vai ser responsável por fazer a conversão dos arquivos typescripts para javascript puro
